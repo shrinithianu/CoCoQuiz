@@ -1,0 +1,12 @@
+import axios from "axios";
+import { getToken } from "./authService";
+const API = "http://localhost:5000/quiz";
+const h = () => ({ headers: { Authorization: `Bearer ${getToken()}` } });
+export const getAllQuizzes = () => axios.get(`${API}/`, h());
+export const getQuiz = (id) => axios.get(`${API}/${id}`, h());
+export const getQuizQuestions = (id) => axios.get(`${API}/${id}/questions`, h());
+export const createQuiz = (data) => axios.post(`${API}/`, data, h());
+export const deleteQuiz = (id) => axios.delete(`${API}/${id}`, h());
+export const addQuestion = (id, data) => axios.post(`${API}/${id}/questions`, data, h());
+export const deleteQuestion = (id) => axios.delete(`${API}/questions/${id}`, h());
+export const getParticipants = (id) => axios.get(`${API}/${id}/participants`, h());

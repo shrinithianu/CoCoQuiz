@@ -1,0 +1,12 @@
+import axios from "axios";
+import { getToken } from "./authService";
+const API = "http://localhost:5000/results";
+const ADMIN = "http://localhost:5000/admin";
+const h = () => ({ headers: { Authorization: `Bearer ${getToken()}` } });
+export const submitQuiz = (data) => axios.post(`${API}/submit`, data, h());
+export const getMyResults = () => axios.get(`${API}/my`, h());
+export const getResultDetail = (id) => axios.get(`${API}/${id}`, h());
+export const getAdminStats = () => axios.get(`${ADMIN}/stats`, h());
+export const getAdminUsers = () => axios.get(`${ADMIN}/users`, h());
+export const getAdminQuizzes = () => axios.get(`${ADMIN}/quizzes`, h());
+export const getAdminResults = () => axios.get(`${ADMIN}/results`, h());
