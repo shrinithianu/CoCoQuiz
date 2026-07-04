@@ -1,10 +1,10 @@
-# 🧠 CoCoQuiz — Online Examination Platform
+#  CoCoQuiz — Online Examination Platform
 
 A full-stack online examination platform with three roles: **Student**, **Teacher**, and **Admin**. Built with React.js frontend and Python Flask backend with MySQL database.
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer    | Technology                              |
 |----------|-----------------------------------------|
@@ -16,7 +16,7 @@ A full-stack online examination platform with three roles: **Student**, **Teache
 
 ---
 
-## 👥 User Roles
+## User Roles
 
 | Role | Icon | What they can do |
 |------|------|-----------------|
@@ -26,7 +26,7 @@ A full-stack online examination platform with three roles: **Student**, **Teache
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CoCoQuiz/
@@ -79,7 +79,7 @@ CoCoQuiz/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 Make sure you have these installed before starting:
 
@@ -89,7 +89,7 @@ Make sure you have these installed before starting:
 
 ---
 
-## 🚀 Setup & Run
+## Setup & Run
 
 ### Step 1 — Extract the project
 
@@ -119,7 +119,7 @@ pip install -r requirements.txt
 py app.py
 ```
 
-✅ You should see:
+You should see:
 ```
 Database initialized successfully.
  * Running on http://127.0.0.1:5000
@@ -139,11 +139,11 @@ npm install
 npm start
 ```
 
-✅ The app will open at **http://localhost:3000**
+The app will open at **http://localhost:3000**
 
 ---
 
-## 📖 How to Use
+## How to Use
 
 ### Register
 Go to **http://localhost:3000/register**
@@ -178,14 +178,14 @@ Choose your role by clicking one of the cards:
 ### As an Admin 👑
 1. Login and view the **Admin Dashboard**
 2. Switch between tabs:
-   - **📊 Overview** — Platform stats + recent activity feed
-   - **👥 Users** — All registered users with roles
-   - **📋 Quizzes** — All quizzes with teacher names
-   - **🏆 All Results** — Every student submission across all quizzes
+   - ** Overview** — Platform stats + recent activity feed
+   - ** Users** — All registered users with roles
+   - ** Quizzes** — All quizzes with teacher names
+   - ** All Results** — Every student submission across all quizzes
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 All protected endpoints require:
 ```
@@ -228,7 +228,7 @@ Authorization: Bearer <jwt_token>
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```
 users           — id, username, email, password, role, created_at
@@ -240,7 +240,7 @@ answers         — id, result_id, question_id, selected_option, is_correct
 
 ---
 
-## 🔐 Security
+## Security
 
 - Passwords hashed with **bcrypt**
 - All routes protected with **JWT tokens**
@@ -251,22 +251,22 @@ answers         — id, result_id, question_id, selected_option, is_correct
 
 ---
 
-## 🎨 Features at a Glance
+## Features at a Glance
 
-- ✅ Role-based registration (Student / Teacher / Admin)
-- ✅ Role-based dashboards with different views
-- ✅ Teacher can set max participant limit per quiz
-- ✅ Live countdown timer with urgent animation
-- ✅ Question navigator sidebar (answered = green)
-- ✅ Instant score calculation on submission
-- ✅ Detailed answer review with correct/wrong highlights
-- ✅ Admin overview with stats and activity feed
-- ✅ Fully responsive — works on mobile and desktop
-- ✅ Color-coded grades: Excellent / Good / Average / Needs Work
+-  Role-based registration (Student / Teacher / Admin)
+-  Role-based dashboards with different views
+-  Teacher can set max participant limit per quiz
+-  Live countdown timer with urgent animation
+-  Question navigator sidebar (answered = green)
+-  Instant score calculation on submission
+-  Detailed answer review with correct/wrong highlights
+-  Admin overview with stats and activity feed
+-  Fully responsive — works on mobile and desktop
+-  Color-coded grades: Excellent / Good / Average / Needs Work
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -279,12 +279,12 @@ answers         — id, result_id, question_id, selected_option, is_correct
 
 ---
 
-## 👩‍💻 Developer
+## Developer
 
 **ShriNithi Anu**  
 Full Stack Developer  
-B.E. Computer Science — 2026  
-📧 shrinithianu@gmail.com
+B.Sc. Computer Science — 2026  
+shrinithianu@gmail.com
 
 ---
 
