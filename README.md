@@ -91,13 +91,7 @@ Make sure you have these installed before starting:
 
 ## Setup & Run
 
-### Step 1 — Extract the project
-
-Extract the zip file to a folder, e.g. `D:\CoCoQuiz`
-
----
-
-### Step 2 — Configure Database Password
+### Step 1 — Configure Database Password
 
 Open `backend/config.py` and set your MySQL root password:
 
@@ -107,7 +101,7 @@ MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD") or "your_mysql_password"
 
 ---
 
-### Step 3 — Run the Backend
+### Step 2 — Run the Backend
 
 Open a terminal and run:
 
@@ -129,7 +123,7 @@ Database initialized successfully.
 
 ---
 
-### Step 4 — Run the Frontend
+### Step 3 — Run the Frontend
 
 Open a **second terminal** (keep the backend running!) and run:
 
